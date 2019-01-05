@@ -11,13 +11,13 @@ const canvas = {
         if(width)this.width = width;
         if(height)this.height = height;
     },
-    append(){
+    append(element){
         this.self.width = this.width;
         this.self.height = this.height;
         this.ctx = this.self.getContext("2d");
         for(let command of this.commands){
             command(this.ctx);
         }
-        document.body.appendChild(this.self);
+        element.appendChild(this.self);
     }
 }
