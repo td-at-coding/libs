@@ -18,6 +18,8 @@ const canvas = {
         for(let command of this.commands){
             command(this.ctx);
         }
-        element.appendChild(this.self);
+        addEventListener("load",e=>{
+            element.appendChild(this.self);
+        })
     }
 }
