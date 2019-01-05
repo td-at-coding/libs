@@ -11,7 +11,7 @@ const canvas = {
         if(width)this.width = width;
         if(height)this.height = height;
     },
-    append(element){
+    append(){
         this.self.width = this.width;
         this.self.height = this.height;
         this.ctx = this.self.getContext("2d");
@@ -19,7 +19,7 @@ const canvas = {
             command(this.ctx);
         }
         addEventListener("load",e=>{
-            element.appendChild(this.self);
+            document.body.appendChild(this.self);
         })
     }
 }
