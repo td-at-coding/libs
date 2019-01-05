@@ -21,9 +21,3 @@ const canvas = {
         document.body.appendChild(this.self);
     }
 }
-
-canvas.do((ctx)=>{
-    ctx.fillRect(40,40,30,30);
-})
-canvas.set_dim(500,500);
-canvas.append()
