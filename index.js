@@ -1,4 +1,4 @@
-const canvas = {
+window.canvas = {
     self:document.createElement("canvas"),
     width:400,
     height:400,
